@@ -18,8 +18,19 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+@media screen {
+  
+}
+
+
 header {
-  font-size: 50;
+  text-align: left;
+  position: fixed;
+  top: 0;
+  left: 50px;
+  right: 90%;
+  margin: 0;
+
 }
 
 @keyframes logo-spin {
