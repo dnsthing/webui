@@ -16,7 +16,7 @@ const Domain = () => {
     const handleOnClickDelete = (e) => {
         alert("Deleted " + state + " from domains");
     }
-
+    //test
 
     const addDomain = () => {
         try {   
