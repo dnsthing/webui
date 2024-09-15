@@ -13,6 +13,20 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.adlist-oneliner input {
+  margin: 7px;
+  padding: 5px;
+  width: 50;
+  height: 25px;
+  display:inline-block;
+}
+
+.adlist-oneliner button {
+  margin: 5px;
+}
+
+
+
 a {
   font-weight: 500;
   /* color: #646cff; */
@@ -27,6 +41,16 @@ a:hover {
 .main-content {
   justify-content: center;
   align-items: start;
+  
+}
+
+.upper-data {
+  max-width: auto - 100px;
+  min-width: 200px;
+  justify-content: start;
+  position: absolute;
+  top: 9%;
+  left: 15%;
 }
 
 .title-page {

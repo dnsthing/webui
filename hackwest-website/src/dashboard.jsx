@@ -1,7 +1,12 @@
 import './App.css'
 
-export default function Dashboard() {
 
+
+function getQueryCount() {
+    
+}
+
+export default function Dashboard() {
 
     return (
         <>
@@ -9,8 +14,12 @@ export default function Dashboard() {
             <h1 class = "title-page">
                 Dashboard
             </h1>
+            <div class = "upper-data">
+                <h2>
+                    Queries Collected: {getQueryCount()}
+                </h2>
+            </div>
         </div>
-
         </>
     )
 }
