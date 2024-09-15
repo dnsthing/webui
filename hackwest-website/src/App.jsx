@@ -3,7 +3,7 @@ import './App.css'
 import { Link } from 'react-router-dom';
 import { BrowserRouter, Route, Routes} from "react-router-dom";
 import  Dashboard  from './dashboard.jsx';
-import  Domains  from './domain.jsx';
+import  Blacklist  from './blacklist.jsx';
 import AdList from './adlist.jsx';
 import Whitelist from './whitelist.jsx';
 import Settings from './settings.jsx';
@@ -22,7 +22,7 @@ function App() {
         <Routes>
           <Route index element={<Dashboard/>}/>
           <Route path ='/dashboard' element={<Dashboard/>}/>
-          <Route path ='/domains' element={<Domains/>}/>
+          <Route path ='/blacklist' element={<Blacklist/>}/>
           <Route path ='/ad-lists' element={<AdList/>}/>
           <Route path ='/whitelist' element={<Whitelist/>}/>
           <Route path ='/settings' element={<Settings/>}/>

@@ -1,6 +1,6 @@
 import './App.css'
 import React, { useState } from 'react'
-import  spawn  from 'node:child_process'
+// import { spawn }  from 'node:child_process'
 
 const AdList = () => {
 
@@ -19,18 +19,19 @@ const AdList = () => {
     }
 
 
+
     const addAdList = () => {
         try {   
             if(state != "") {
-                const callShell = require("child_process").callShell;
-                callShell('dnsthing addlist add ' + state, (e, stdout, stderr)=> {
-                    if(e instanceof Error) {
-                        console.error(e);
-                        throw e;
-                    }
-                    console.log('stdout ', stdout);
-                    console.log('stderr', stderr);
-                })
+                // const callShell = require("child_process").callShell;
+                // callShell('dnsthing addlist add ' + state, (e, stdout, stderr)=> {
+                //     if(e instanceof Error) {
+                //         console.error(e);
+                //         throw e;
+                //     }
+                //     console.log('stdout ', stdout);
+                //     console.log('stderr', stderr);
+                // })
                 handleOnClick();
             }
         } catch (e) {
