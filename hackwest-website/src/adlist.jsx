@@ -1,5 +1,6 @@
 import './App.css'
 import React, { useState } from 'react'
+import  spawn  from 'node:child_process'
 
 const AdList = () => {
 
@@ -17,10 +18,19 @@ const AdList = () => {
         alert("Deleted " + state + " from the list");
     }
 
+
     const addAdList = () => {
         try {   
             if(state != "") {
-                //add functionality to call the api
+                const callShell = require("child_process").callShell;
+                callShell('dnsthing addlist add ' + state, (e, stdout, stderr)=> {
+                    if(e instanceof Error) {
+                        console.error(e);
+                        throw e;
+                    }
+                    console.log('stdout ', stdout);
+                    console.log('stderr', stderr);
+                })
                 handleOnClick();
             }
         } catch (e) {
