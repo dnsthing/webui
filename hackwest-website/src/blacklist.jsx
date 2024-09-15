@@ -1,7 +1,7 @@
 import './App.css'
 import React, { useState } from 'react'
 
-const Domain = () => {
+const Blacklist = () => {
 
     const [state, setState] = useState("");
   
@@ -66,4 +66,4 @@ const Domain = () => {
     )
 }
 
-export default Domain
+export default Blacklist

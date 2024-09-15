@@ -33,7 +33,7 @@ function App() {
       <div class = "sidebar">
         <a href = "dashboard">Dashboard</a>
         <a href = "ad-lists">Ad Lists</a>
-        <a href = "domains">Domains</a>
+        <a href = "blacklist">Domains</a>
         <a href = "whitelist">Whitelist</a> 
         <a href = "settings">Settings</a>
       </div>
